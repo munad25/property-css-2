@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Website Layout</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			margin: 0;
+		}
+		/*Bagian header*/
+		.header{
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		/*Bagaian navigation*/
+		.navigation{
+			overflow: hidden;
+			background-color: #03A9F4;
+		}
+		.navigation a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			text-decoration: none;
+		}
+		.navigation a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		
+		/*Bagian content*/
+		*{
+			box-sizing: border-box;
+		}
+		.aside, .article{
+			float: left;
+			padding: 10px;
+		}
+		.aside{
+			width: 25%;
+		}
+		.article{
+			width: 50%;
+		}
+		@media (max-width: 600px){
+			.aside, .article{
+				width: 100%;
+			}
+		}
+
+		/*Bagian footer*/
+		.footer{
+			background-color: #f1f1f1;
+			padding: 10px;
+			text-align: center;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Header</h1>
+		Rezise ukuran browser untuk melihat efek responsive
+	</div>
+
+	<div class="navigation">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</div>
+
+	<div class="container">
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+		<div class="article">
+			<h2>Main Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium erna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique......</p>
+		</div>
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+	</div>
+
+	<div class="footer">
+		Footer
+	</div>
+</body>
+</html>
